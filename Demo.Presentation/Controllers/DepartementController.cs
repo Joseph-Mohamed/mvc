@@ -14,6 +14,7 @@ namespace Demo.Presentation.Controllers
             _departementServices = departementServices;
         }
         // baseurl / departement / index
+
         public IActionResult Index()
         {
             var dept = _departementServices.GetAllDepartement();
