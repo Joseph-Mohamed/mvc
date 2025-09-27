@@ -1,0 +1,16 @@
+﻿namespace Demo.DataAccessesLayer.Data.Configrations
+{
+    internal class DepartementsConfigrations : IEntityTypeConfiguration<Departement>
+    {
+        public void Configure(EntityTypeBuilder<Departement> builder)
+        {
+            builder.Property(d => d.Id).UseIdentityColumn(10, 10);
+            builder.Property(d => d.Name).HasColumnType("varchar(20)");
+            builder.Property(d => d.Code).HasColumnType("varchar(20)");
+            builder.Property(d => d.CreatedOn).HasDefaultValueSql("GETDATE()");
+            builder.Property(d => d.ModifiedOn).HasComputedColumnSql("GETDATE()");
+
+
+        }
+    }
+}

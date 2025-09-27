@@ -1,0 +1,65 @@
+﻿@using Demo.BLL.DTO
+@model IEnumerable<DepartmentDTO>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="my-3">All Departements</h1>
+<br/>
+<a class="btn btn-primary my-3" asp-controller="Departement" asp-action="Create">Create New Departement</a>
+
+@if(Model.Any())
+{
+    <table class=" table table-striped table-hover mt-3">
+
+        <thead class="text-center">
+            <tr>
+                <th>@Html.DisplayNameFor(d=>d.Code)</th>
+                <th>>@Html.DisplayNameFor(d => d.Name)</th>
+                <th>>@Html.DisplayNameFor(d => d.Decription)</th>
+                <th>>@Html.DisplayNameFor(d => d.DateOfCreation)</th>
+                <th>Details</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+
+
+        <tbody class="text-center">
+            @foreach(var dep in Model)
+            {
+                <tr>
+                    <td>@dep.Code</td>
+                    <td>@dep.Name</td>
+                    <td>@dep.Decription</td>
+                    <td>@dep.DateOfCreation</td>
+                    <td><a class="btn btn-primary" asp-controller="Departement" asp-action="Details" asp-route-id="@dep.DepID">Details</a></td>
+                    <td><a class="btn btn-success" asp-controller="Departement" asp-action="Edit" asp-route-id="@dep.DepID">Edit</a></td>
+                    <td><a class="btn btn-danger" asp-controller="Departement" asp-action="Delete" asp-route-id="@dep.DepID">Delete</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    //no departements found
+    <div class="alert alert-info mt-3">
+        <h2>No Departements Found !</h2>
+    </div>
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
