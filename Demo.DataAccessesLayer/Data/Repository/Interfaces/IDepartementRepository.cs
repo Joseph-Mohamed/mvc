@@ -1,11 +1,9 @@
-﻿namespace Demo.DataAccessesLayer.Data.Repository.Interfaces
+﻿using Demo.DataAccessesLayer.Models.DepartementModule;
+
+namespace Demo.DataAccessesLayer.Data.Repository.Interfaces
 {
-    public interface IDepartementRepository
+    public interface IDepartementRepository:IGenaricRepository<Departement>
     {
-        int Add(Departement departement);
-        IEnumerable<Departement> GetAll(bool withTracking = false);
-        Departement? GetById(int id);
-        int REmove(Departement departement);
-        int Update(Departement departement);
+ 
     }
 }

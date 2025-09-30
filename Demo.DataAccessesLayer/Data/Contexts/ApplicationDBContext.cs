@@ -1,4 +1,7 @@
-﻿namespace Demo.DataAccessesLayer.Data.Contexts
+﻿using Demo.DataAccessesLayer.Models.DepartementModule;
+using Demo.DataAccessesLayer.Models.EmpolyeeModule;
+
+namespace Demo.DataAccessesLayer.Data.Contexts
 {
     //depancy injection
     public class ApplicationDBContext:DbContext
@@ -25,5 +28,6 @@
 
 
         public DbSet<Departement> departements { get; set; }
+        public DbSet<Empolyee> empolyees { get; set; }
     }
 }

@@ -101,19 +101,19 @@ namespace Demo.BLL.Servies.Classes
         public IEnumerable<DepartmentDTO> GetAllDepartement()
         {
             var departments = _departementRepository.GetAll();
-            //var depReturnDTO = departments.Select(d => new DepartmentDTO
-            //{
-            //    DepID = d.Id,
-            //    Code = d.Code,
-            //    Name = d.Name,
-            //    Decription = d.Decription,
-            //    DateOfCreation = d.CreatedOn.HasValue
-            //        ? DateOnly.FromDateTime(d.CreatedOn.Value)
-            //        : default
-            //});
-            //return depReturnDTO;
+            var depReturnDTO = departments.Select(d => new DepartmentDTO
+            {
+                DepID = d.Id,
+                Code = d.Code,
+                Name = d.Name,
+                Decription = d.Decription,
+                DateOfCreation = d.CreatedOn.HasValue
+                    ? DateOnly.FromDateTime(d.CreatedOn.Value)
+                    : default
+            });
+            return depReturnDTO;
 
-            return departments.Select(d => new DepartmentDTO());
+            //return departments.Select(d => new DepartmentDTO());
         }
 
         // Get By Id

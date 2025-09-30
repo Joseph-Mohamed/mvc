@@ -1,43 +1,4 @@
-﻿//using Demo.BLL.DTO;
-//using Demo.DataAccessesLayer.Data.Repository.Classes;
-//using Demo.DataAccessesLayer.Data.Repository.Interfaces;
-
-
-//using Demo.BLL.DTO;
-//using Demo.DataAccessesLayer.Data.Repository.Classes;
-//using Demo.DataAccessesLayer.Data.Repository.Interfaces;
-
-
-//using Demo.BLL.DTO;
-//using Demo.DataAccessesLayer.Data.Repository.Classes;
-//using Demo.DataAccessesLayer.Data.Repository.Interfaces;
-
-
-//using Demo.BLL.DTO;
-//using Demo.DataAccessesLayer.Data.Repository.Classes;
-//using Demo.DataAccessesLayer.Data.Repository.Interfaces;
-
-
-//using Demo.BLL.DTO;
-//using Demo.DataAccessesLayer.Data.Repository.Classes;
-//using Demo.DataAccessesLayer.Data.Repository.Interfaces;
-
-
-//using Demo.BLL.DTO;
-//using Demo.DataAccessesLayer.Data.Repository.Classes;
-//using Demo.DataAccessesLayer.Data.Repository.Interfaces;
-
-
-//using Demo.BLL.DTO;
-//using Demo.DataAccessesLayer.Data.Repository.Classes;
-//using Demo.DataAccessesLayer.Data.Repository.Interfaces;
-
-
-//using Demo.BLL.DTO;
-//using Demo.DataAccessesLayer.Data.Repository.Classes;
-//using Demo.DataAccessesLayer.Data.Repository.Interfaces;
-
-using Demo.BLL.DTO;
+﻿using Demo.BLL.DTO;
 
 namespace Demo.BLL.Servies.Interfaces
 {

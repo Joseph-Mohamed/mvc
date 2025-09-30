@@ -1,5 +1,5 @@
 ﻿using Demo.BLL.DTO;
-using Demo.DataAccessesLayer.Models;
+using Demo.DataAccessesLayer.Models.DepartementModule;
 using System.Runtime.Intrinsics.Arm;
 
 namespace Demo.BLL.Factories
