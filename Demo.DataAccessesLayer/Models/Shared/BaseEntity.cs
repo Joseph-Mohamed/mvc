@@ -1,4 +1,4 @@
-﻿namespace Demo.DataAccessesLayer.Models
+﻿namespace Demo.DataAccessesLayer.Models.Shared
 {
     public class BaseEntity
     {

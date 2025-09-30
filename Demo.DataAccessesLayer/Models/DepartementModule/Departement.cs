@@ -1,4 +1,6 @@
-﻿namespace Demo.DataAccessesLayer.Models
+﻿using Demo.DataAccessesLayer.Models.Shared;
+
+namespace Demo.DataAccessesLayer.Models.DepartementModule
 {
     public class Departement: BaseEntity
     {
